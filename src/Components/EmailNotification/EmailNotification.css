@@ -1,4 +1,4 @@
-.email-notification {
+/* .email-notification {
     margin-top: 20px;
     padding: 20px;
     background: rgba(46, 125, 50, 0.1);
@@ -38,4 +38,104 @@
         font-size: 1rem;
         margin: 20px 15px;
     }
+} */
+
+
+.email-notification {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.email-status {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.email-status i {
+  font-size: 24px;
+}
+
+.email-status.sending {
+  background: rgba(33, 150, 243, 0.1);
+  color: #2196f3;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.email-status.success {
+  background: rgba(46, 125, 50, 0.1);
+  color: #2e7d32;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.email-status.failed {
+  background: rgba(244, 67, 54, 0.1);
+  color: #f44336;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.email-status.failed div {
+  flex: 1;
+}
+
+.email-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.retry-btn, .mailto-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s;
+}
+
+.retry-btn {
+  background: #2196f3;
+  color: white;
+}
+
+.retry-btn:hover {
+  background: #0d8bf2;
+}
+
+.mailto-btn {
+  background: #ff9800;
+  color: white;
+}
+
+.mailto-btn:hover {
+  background: #f57c00;
+}
+
+@media (max-width: 768px) {
+  .email-notification {
+    padding: 15px;
+    margin: 20px 15px;
+  }
+  
+  .email-actions {
+    flex-direction: column;
+  }
+  
+  .retry-btn, .mailto-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
