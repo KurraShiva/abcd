@@ -652,7 +652,7 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import EmailNotification from './components/EmailNotification/EmailNotification' // ADD THIS IMPORT
+import EmailNotification from './Components/EmailNotification/EmailNotification'
 import './App.css'
 
 function App() {
