@@ -1,0 +1,41 @@
+.email-notification {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(46, 125, 50, 0.1);
+    border-radius: 10px;
+    color: #2e7d32;
+    font-size: 1.1rem;
+    text-align: center;
+    animation: slideIn 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-notification i {
+    font-size: 1.3rem;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .email-notification {
+        padding: 15px;
+        font-size: 1rem;
+        margin: 20px 15px;
+    }
+}
